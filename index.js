@@ -44,7 +44,6 @@ function addTask() {
     if (!elem) {
         writeStatus("Specificaţi taskul în casetă şi apăsaţi butonul 'Adaugă task'", "error");
     } else {
-        // categories.push(elem);
         writeStatus("Taskul " + '"' + elem + '"' + " adaugat", "success");
 
         document.getElementById('task_list').innerHTML += '<a href="#" class="list-group-item list-item"' +
@@ -52,17 +51,13 @@ function addTask() {
             '  <span class="glyphicon glyphicon-remove " aria-hidden="true" ></span></a>';
         task_nr++;
 
-        //document.getElementById("MyElement").className = "Normal";
     };
-    // len = categories.length;
-    // shuffle(categories);
+
     document.getElementById("generate_button").textContent = "Generează tabel";
 }
 
 
 function delete_task(elem) {
-    // var id = elem.id;
-    // document.getElementById(id)
     elem.parentNode.removeChild(elem);
     writeStatus("Taskul " + elem.textContent + "a fost şters", "info");
 
@@ -124,7 +119,7 @@ function myFunction() {
             };
         };
 
-        // insert table header
+     
         var days = ["Luni", "Marţi", "Miercuri", "Joi", "Vineri", "Sîmbătă", "Duminică"]
         var durata = ["10min", "15min", "20min", "30min", "1h", "30min", "20min", "10min", "20min", "30min", "25min"]
         var row = table.insertRow(0);
@@ -136,9 +131,6 @@ function myFunction() {
         };
 
         var row = table.insertRow(0);
-        // row.innerHTML = "Data:" ;
-        //var cell =  row.insertCell(j);    
-
 
 
         for (var i = 0; i < k; i++) {

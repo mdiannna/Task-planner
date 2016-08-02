@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css"  media="all" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+ 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" media="all" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" media="all" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Task planner </h1>
+    </div>
+  </header>
+
+  <section>
+
+   <div class="container">
+     <div>
+      <h4>Scrieţi taskurile: <input id="input">
+      <button onclick="addTask()" class="btn btn-primary">Adaugă task</button>
+      </h4>
+    </div>
+
+    <div>
+      <p id="status"></p>
+    </div>
+
+    <div class="row">
+      <div class="list-group container col-md-4" id="task_list">
+    
+        
+       </div>
+     
+    </div>  
+
+
+    <button onclick="myFunction()" class="btn btn-success " id="generate_button">Generează tabel</button>
+    <button onclick="refresh()" class="btn btn-danger">Şterge tabelul</button>
+    <br>
+    <br>  
+    <table id="myTable" class="table">
+    </table>
+  </div>
+</section>
+
+
+<footer>
+</footer>
+
+
+
+</body>
+</html>

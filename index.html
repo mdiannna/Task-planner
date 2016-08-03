@@ -3,8 +3,10 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
   <link rel="stylesheet" type="text/css"  media="all" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Latest compiled and minified CSS -->
- 
+
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all" crossorigin="anonymous">
 
   <!-- Optional theme -->
@@ -26,10 +28,12 @@
 
   <section>
    <div class="container">
-     <div>
-      <h4>Scrieţi taskurile: <input id="input">
-      <button onclick="addTask()" class="btn btn-primary">Adaugă task</button>
-      </h4>
+     <div class="task-input-container">
+      <h4>Scrieţi taskurile:</h4>
+      <div class="input-wrapper">
+        <input id="input">
+        <button onclick="addTask()" class="btn btn-primary">Adaugă task</button>
+      </div>
     </div>
 
     <div>

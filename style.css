@@ -10,6 +10,16 @@ table, td {
 	color: white;
 }
 
+input {
+	padding: 5px 10px;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+.input-wrapper {
+	width: 100%;
+}
+
 #ziua0{
 	background-color:#ff1744;
 }
@@ -38,9 +48,6 @@ table, td {
 	background-color: #00695C;
 }
 
-{
-	background-color: #FF00FF;
-}
 
 
 

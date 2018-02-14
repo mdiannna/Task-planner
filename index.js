@@ -2,7 +2,6 @@ var categories = [];
 var len = categories.length;
 var task_nr = 0;
 
-
 function init_categories() {
     categories = [];
     len = categories.length;
@@ -32,14 +31,13 @@ function writeStatus(message, state) {
                 " " + message;
             document.getElementById("status").className = "alert alert-info";
             break;
-
     }
 }
+
 
 function addTask() {
     var elem = document.getElementById("input").value;
     document.getElementById("input").value = "";
-
 
     if (!elem) {
         writeStatus("Specificaţi taskul în casetă şi apăsaţi butonul 'Adaugă task'", "error");
@@ -120,8 +118,6 @@ function myFunction() {
         };
 
      
-        var days = ["Luni", "Marţi", "Miercuri", "Joi", "Vineri", "Sîmbătă", "Duminică"]
-        var durata = ["10min", "15min", "20min", "30min", "1h", "30min", "20min", "10min", "20min", "30min", "25min"]
         var row = table.insertRow(0);
         for (var j = 0; j < 7; j++) {
             var cell = row.insertCell(j);
@@ -141,7 +137,7 @@ function myFunction() {
             var h = 0;
             var n = 0;
             while (h < k - 6) {
-                cells_array[i + h].innerHTML = categories[n] + "<br>" + durata[Math.floor((Math.random() * 10))];
+                cells_array[i + h].innerHTML = categories[n] + "<br>" + duration[Math.floor((Math.random() * (duration.length-1)))];
                 n++;
                 h += 7;
 
@@ -158,7 +154,6 @@ function myFunction() {
 }
 
 function getDate() {
-    var month = ["ianuarie", "februarie", "martie", 'aprilie', "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
     var d = new Date();
     var n = d.getDate();
     var m = d.getMonth();
@@ -168,8 +163,6 @@ function getDate() {
     if (n > diff_monday)
         n = n - diff_monday;
     else
-
-
     if (n < 10)
         n = "0" + n;
     var date = n + " " + month[m] + " " + year;
